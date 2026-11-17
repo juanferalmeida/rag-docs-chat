@@ -42,3 +42,7 @@ next-env.d.ts
 
 # documentación descargada (se puede volver a descargar)
 /docs/
+
+# instrucciones privadas para Claude Code
+CLAUDE.md
+claude.md
