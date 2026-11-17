@@ -1,0 +1,19 @@
+services:
+  db:
+    # Postgres 17 que ya trae pgvector instalado
+    image: pgvector/pgvector:pg17
+    container_name: rag-db
+    environment:
+      # Credenciales SOLO para desarrollo local
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag
+      POSTGRES_DB: rag
+    ports:
+      # tu PC:5432 → contenedor:5432
+      - "5432:5432"
+    volumes:
+      # Guarda los datos fuera del contenedor para no perderlos al apagarlo
+      - rag-db-data:/var/lib/postgresql/data
+
+volumes:
+  rag-db-data:

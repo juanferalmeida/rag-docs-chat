@@ -1,0 +1,6 @@
+{
+  // Corrector ortográfico: revisar en inglés y en español
+  "cSpell.language": "en,es",
+  // Palabras técnicas del proyecto que el corrector no conoce
+  "cSpell.words": ["ollama", "pgvector", "nomic", "embeddings", "streaming"]
+}
